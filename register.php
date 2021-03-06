@@ -10,6 +10,16 @@
 <body>
     <div class="signInContainer">
         <div class="column">
+            <form method="POST">
+                <input type="text" name="firstname" placeholder="Frst name" required>   
+                <input type="text" name="lasttname" placeholder="Last  name" required> 
+                <input type="text" name="username" placeholder="Username" required>   
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="email" name="eamil2" placeholder="Confirm email" required>      
+                <input type="password" name="password" placeholder="password" required>      
+                <input type="password" name="password2" placeholder="Confirm password" required>   
+                <input type="submit" name="submit password" placeholder="SUBMIT">   
+            </form>
             
         </div>
         
