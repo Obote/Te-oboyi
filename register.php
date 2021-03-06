@@ -1,3 +1,8 @@
+<?php
+    if(isset($_POST["submitButton"])){
+        echo "Form was submitted";
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +23,7 @@
                 <input type="email" name="eamil2" placeholder="Confirm email" required>      
                 <input type="password" name="password" placeholder="password" required>      
                 <input type="password" name="password2" placeholder="Confirm password" required>   
-                <input type="submit" name="submit password" placeholder="SUBMIT">   
+                <input type="submit" name="submitButton" placeholder="SUBMIT">   
             </form>
             
         </div>
