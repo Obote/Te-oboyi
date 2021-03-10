@@ -10,11 +10,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/style/style.css" />
-    <title>Welcome to Te-Aboyi</title>
+    <title>Welcome to KaNeno</title>
 </head>  
 <body>
     <div class="signInContainer">
         <div class="column">
+            <img src="assets/images/logo.png" title="logo" alt="Site logo" >
+            <h3>Sign Up</h3>
+            <span>to continue to KANENO</span> 
             <form method="POST">
                 <input type="text" name="firstname" placeholder="Frst name" required>   
                 <input type="text" name="lasttname" placeholder="Last  name" required> 
@@ -30,6 +33,6 @@
         
     </div>
     
-</body>
+</body> 
 </html>
  
