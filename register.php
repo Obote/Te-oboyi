@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/style/style.css" />
     <title>Welcome to Te-Aboyi</title>
-</head>
+</head>  
 <body>
     <div class="signInContainer">
         <div class="column">

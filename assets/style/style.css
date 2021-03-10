@@ -17,6 +17,7 @@ body {
     background-color: #fff;
     min-height: 300px;
     max-height: flex;
+    padding: 20px 35px;
 }
 .column form {
     display: flex;
