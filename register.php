@@ -1,7 +1,20 @@
 <?php
     if(isset($_POST["submitButton"])){
-        echo "Form was submitted";
+        
+        $firstName = sanitizeFormString($_POST["firstName"]);
+        echo $firstName;
     }
+
+    function sanitizeFormString($inputText) {
+        $inputText = strip_tags($inputText);
+        $inputText = str_replace(" ", "", $inputText);
+
+        $inputText = strtolower($inputText);
+        $inputText = ucfirst($inputText);
+        return $inputText;
+
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,8 +35,8 @@
             </div>
             
             <form method="POST">
-                <input type="text" name="firstname" placeholder="Frst name" required>   
-                <input type="text" name="lasttname" placeholder="Last  name" required> 
+                <input type="text" name="firstName" placeholder="Frst name" required>   
+                <input type="text" name="lastName" placeholder="Last  name" required> 
                 <input type="text" name="username" placeholder="Username" required>   
                 <input type="email" name="email" placeholder="Email" required>
                 <input type="email" name="eamil2" placeholder="Confirm email" required>      
