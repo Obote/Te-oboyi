@@ -15,9 +15,12 @@
 <body>
     <div class="signInContainer">
         <div class="column">
-            <img src="assets/images/logo.png" title="logo" alt="Site logo" >
-            <h3>Sign Up</h3>
-            <span>to continue to KANENO</span> 
+            <div class="header">
+                <img src="assets/images/logo.png" title="logo" alt="Site logo" >
+                <h3 >Sign Up</h3>
+                <span>to continue to KANENO</span> 
+            </div>
+            
             <form method="POST">
                 <input type="text" name="firstname" placeholder="Frst name" required>   
                 <input type="text" name="lasttname" placeholder="Last  name" required> 
@@ -28,6 +31,8 @@
                 <input type="password" name="password2" placeholder="Confirm password" required>   
                 <input type="submit" name="submitButton" placeholder="SUBMIT">   
             </form>
+            
+            <a href="login.php" class="signInMessage">Already have an account? Sign in here!</a>
             
         </div>
         
