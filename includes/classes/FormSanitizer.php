@@ -25,10 +25,8 @@ class FormSanitizer {
         $inputText = strip_tags($inputText);
         $inputText = str_replace(" ", "", $inputText);
         return $inputText; 
-
+    }
 
 }
-
-
 
 ?>
