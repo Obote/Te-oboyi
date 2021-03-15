@@ -13,6 +13,12 @@ class Account {
              array_push($this->errorArray, "First name wrong length" );
         }
     }
+
+    public function getError($error) {
+        if(in_array($error, $this->errorArray)) {
+            return $error;
+        }
+    }
  
 }
 ?>  

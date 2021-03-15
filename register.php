@@ -15,8 +15,9 @@ require_once("includes/classes/Account.php");
         $email2 = FormSanitizer::sanitizeFormEmail($_POST["email2"]);
         $password = FormSanitizer::sanitizeFormPassword($_POST["$password"]);
         $password2 = FormSanitizer::sanitizeFormPassword($_POST["$password2"]);
-    
         
+        $account->validateFirstName($firstName);
+            
     }
     
 ?>
@@ -35,11 +36,12 @@ require_once("includes/classes/Account.php");
         <div class="column">
             <div class="header">
                 <img src="assets/images/logo.png" title="logo" alt="Site logo" >
-                <h3 >Sign Up</h3>
+                <h3 >Sign Up</h3> 
                 <span>to continue to KANENO</span> 
             </div>
             
             <form method="POST">
+                <?php echo $account->getError("First name wrong length"); ?>
                 <input type="text" name="firstName" placeholder="Frst name" required>   
                 <input type="text" name="lastName" placeholder="Last  name" required> 
                 <input type="text" name="username" placeholder="Username" required>   
